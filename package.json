@@ -1,0 +1,34 @@
+{
+  "name": "postcss-celebcolors",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to turn any string into a valid color",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "colors",
+    "celeb",
+    "rgb"
+  ],
+  "author": "Joke Gysen <jokegysen@gmail.com>",
+  "license": "MIT",
+  "repository": "keukenrolletje/postcss-celebcolors",
+  "bugs": {
+    "url": "https://github.com/keukenrolletje/postcss-celebcolors/issues"
+  },
+  "homepage": "https://github.com/keukenrolletje/postcss-celebcolors",
+  "dependencies": {
+    "postcss": "^5.1.2"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "eslint": "^3.4.0",
+    "eslint-config-postcss": "^2.0.2"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  }
+}
