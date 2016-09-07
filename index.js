@@ -5,10 +5,14 @@ module.exports = postcss.plugin('postcss-celebcolors', function (opts) {
 
     // Work with options here
 
-    return function (root, result) {
+    return function (css, result) {
+        css.walkDecls(decl => {
+          var colorString = decl.value.split('');
+          //uppercase should work!!
           var validChars = ['a', 'b', 'c', 'd', 'e', 'f', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+          decl.value = colorString;
 
-        // Transform CSS AST here
+          colorString.forEach(function(letter) {
             /* If character is #, remove from array */
             if(letter === '#'){
               colorString.splice(letter, 1);
@@ -24,11 +28,16 @@ module.exports = postcss.plugin('postcss-celebcolors', function (opts) {
               let index = colorString.indexOf(letter);
               colorString[index] = 0;
             }
+
             //if array length 1 - 2
             //else array length 3
             // else
             if(colorString.length < 3) {
                 colorString.push('0');
             }
+
+
+		  });
+       });
     };
 });
