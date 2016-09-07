@@ -24,5 +24,11 @@ module.exports = postcss.plugin('postcss-celebcolors', function (opts) {
               let index = colorString.indexOf(letter);
               colorString[index] = 0;
             }
+            //if array length 1 - 2
+            //else array length 3
+            // else
+            if(colorString.length < 3) {
+                colorString.push('0');
+            }
     };
 });
