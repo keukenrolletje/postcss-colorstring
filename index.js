@@ -14,5 +14,15 @@ module.exports = postcss.plugin('postcss-celebcolors', function (opts) {
               colorString.splice(letter, 1);
             }
 
+            /* If character is not a valid char or number, replace with 0 */
+            if(!(validChars.indexOf(letter) > -1)){
+
+              var contains = function (haystack, needle) {
+                  return !!~haystack.indexOf(needle);
+              };
+              //letter = 0;
+              let index = colorString.indexOf(letter);
+              colorString[index] = 0;
+            }
     };
 });
