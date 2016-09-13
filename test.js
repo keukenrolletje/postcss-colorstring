@@ -11,10 +11,9 @@ function run(t, input, output, opts = { }) {
         });
 }
 
-/* Write tests here
+/* Write tests here */
 
-test('does something', t => {
-    return run(t, 'a{ }', 'a{ }', { });
+test('chucknorris is color #c00000', t => {
+    run(t, 'a { color: chucknorris; }',
+           'a { color: #c00000; }');
 });
-
-*/

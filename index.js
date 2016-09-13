@@ -27,7 +27,7 @@ module.exports = postcss.plugin('postcss-celebcolors', function(opts) {
             }
 
             colorString.forEach(function(letter) {
-                /* If character is #, remove from array */
+                /* If character is #, remove from array, we do not remove spaces because it will give wrong colors */
                 if (letter === '#') {
                     colorString.splice(letter, 1);
                 }
