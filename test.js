@@ -17,3 +17,8 @@ test('chucknorris is color #c00000', t => {
     run(t, 'a { color: chucknorris; }',
            'a { color: #c00000; }');
 });
+
+test('Do not colorstring existing colors', t => {
+    run(t, 'a { color: red; }',
+           'a { color: red; }');
+});
