@@ -10,12 +10,13 @@ http://scrappy-do.blogspot.be/2004/08/little-rant-about-microsoft-internet.html
 [ci-img]:  https://travis-ci.org/keukenrolletje/postcss-celebcolors.svg
 [ci]:      https://travis-ci.org/keukenrolletje/postcss-celebcolors
 
+Using this `input.css`:
 ```css
 .foo {
   color-ie:  Supercalifragilisticexpialidocious;
 }
 ```
-
+you will get:
 ```css
 .foo {
   color: #0c000c;
@@ -25,7 +26,7 @@ http://scrappy-do.blogspot.be/2004/08/little-rant-about-microsoft-internet.html
 ## Usage
 
 ```js
-postcss([ require('postcss-celebcolors') ])
+postcss([ require('postcss-colorstring') ])
 ```
 
 See [PostCSS] docs for examples for your environment.
