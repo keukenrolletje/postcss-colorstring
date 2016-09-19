@@ -10,7 +10,7 @@ based on http://stackoverflow.com/questions/8318911/why-does-html-think-chucknor
 
 ```css
 .foo {
-  color:  Supercalifragilisticexpialidocious;
+  color-ie:  Supercalifragilisticexpialidocious;
 }
 ```
 
