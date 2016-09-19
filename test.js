@@ -27,3 +27,7 @@ test('Normal colors still work', t => {
     run(t, 'a { color: #010101; }',
            'a { color: #010101; }');
 });
+test('Normal colors (3) still work', t => {
+    run(t, 'a { color: #fff; }',
+           'a { color: #fff; }');
+});
