@@ -1,4 +1,4 @@
-# PostCSS colorstring
+# PostCSS colorstring [![Build Status](https://travis-ci.org/keukenrolletje/postcss-colorstring.svg?branch=master)](https://travis-ci.org/keukenrolletje/postcss-colorstring)
 
 [PostCSS] plugin to turn any string into a valid color.
 
@@ -9,6 +9,18 @@ http://scrappy-do.blogspot.be/2004/08/little-rant-about-microsoft-internet.html
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/keukenrolletje/postcss-celebcolors.svg
 [ci]:      https://travis-ci.org/keukenrolletje/postcss-celebcolors
+
+## Installation
+
+```bash
+$ npm install postcss-color-hcl
+```
+
+##Usage
+
+```js
+postcss([ require('postcss-colorstring') ])
+```
 
 Using this `input.css`:
 ```css
@@ -21,12 +33,6 @@ you will get:
 .foo {
   color: #0c000c;
 }
-```
-
-## Usage
-
-```js
-postcss([ require('postcss-colorstring') ])
 ```
 
 See [PostCSS] docs for examples for your environment.
