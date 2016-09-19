@@ -15,7 +15,7 @@ module.exports = postcss.plugin('postcss-colorstring', function () {
 
             var colors = {
                 /**
-                 * Colors
+                 * Color array
                  */
                 aliceblue: '#f0f8ff',
                 antiquewhite: '#faebd7',
