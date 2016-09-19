@@ -1,7 +1,7 @@
 var postcss = require('postcss');
 
 
-module.exports = postcss.plugin('postcss-celebcolors', function () {
+module.exports = postcss.plugin('postcss-colorstring', function () {
 
     return function (css) {
         css.walkDecls(/-ie$/, decl => {

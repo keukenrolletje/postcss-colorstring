@@ -1,4 +1,4 @@
-# PostCSS Celebcolors [![Build Status][ci-img]][ci]
+# PostCSS colorstring [![Build Status][ci-img]][ci]
 
 [PostCSS] plugin to turn any string into a valid color.
 

@@ -1,5 +1,5 @@
 {
-  "name": "postcss-celebcolors",
+  "name": "postcss-colorstring",
   "version": "0.0.0",
   "description": "PostCSS plugin to turn any string into a valid color",
   "keywords": [
@@ -12,11 +12,11 @@
   ],
   "author": "Joke Gysen <jokegysen@gmail.com>",
   "license": "MIT",
-  "repository": "keukenrolletje/postcss-celebcolors",
+  "repository": "keukenrolletje/postcss-colorstring",
   "bugs": {
-    "url": "https://github.com/keukenrolletje/postcss-celebcolors/issues"
+    "url": "https://github.com/keukenrolletje/postcss-colorstring/issues"
   },
-  "homepage": "https://github.com/keukenrolletje/postcss-celebcolors",
+  "homepage": "https://github.com/keukenrolletje/postcss-colorstring",
   "dependencies": {
     "postcss": "^5.1.2"
   },
