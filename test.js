@@ -22,3 +22,8 @@ test('Do not colorstring existing colors', t => {
     run(t, 'a { color: red; }',
            'a { color: red; }');
 });
+
+test('Normal colors still work', t => {
+    run(t, 'a { color: #010101; }',
+           'a { color: #010101; }');
+});
