@@ -191,6 +191,17 @@ module.exports = postcss.plugin('postcss-celebcolors', function () {
                 return i;
             }
 
+            function checkAll(arr) {
+                if (arr[0] === '#' &&
+                    validChars.indexOf(arr[1]) > -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            var checkedString = checkAll(colorString);
+
             if (colorChecker() === false) {
                 colorString.forEach(function (letter) {
                     /*
@@ -220,8 +231,12 @@ module.exports = postcss.plugin('postcss-celebcolors', function () {
                     colorString.push('0');
                 }
 
-                // After we have pushed to length 3 prepend each letter with 0
-                if (colorString.length === 3) {
+                /* After we have pushed to length 3
+                 * prepend each
+                 * check if string was already
+                 * invalid in the beginning
+                 */
+                if (colorString.length === 3 && checkedString === false) {
                     colorString.splice(0, 0, '0');
                     colorString.splice(2, 0, '0');
                     colorString.splice(4, 0, '0');
