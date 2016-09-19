@@ -4,7 +4,9 @@ var postcss = require('postcss');
 module.exports = postcss.plugin('postcss-celebcolors', function () {
 
     return function (css) {
-        css.walkDecls(decl => {
+        css.walkDecls(/-ie$/, decl => {
+            var colorProp = decl.prop;
+            decl.prop = colorProp.replace('-ie', '');
             var colorString = decl.value.split('');
             var validChars = ['a', 'b', 'c', 'd', 'e', 'f', 'A', 'B', 'C', 'D',
                 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7',
