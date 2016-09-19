@@ -14,20 +14,20 @@ function run(t, input, output, opts = { }) {
 /* Write tests here */
 
 test('chucknorris is color #c00000', t => {
-    run(t, 'a { color: chucknorris; }',
+    run(t, 'a { color-ie: chucknorris; }',
            'a { color: #c00000; }');
 });
 
 test('Do not colorstring existing colors', t => {
-    run(t, 'a { color: red; }',
+    run(t, 'a { color-ie: red; }',
            'a { color: red; }');
 });
 
 test('Normal colors still work', t => {
-    run(t, 'a { color: #010101; }',
+    run(t, 'a { color-ie: #010101; }',
            'a { color: #010101; }');
 });
 test('Normal colors (3) still work', t => {
-    run(t, 'a { color: #fff; }',
+    run(t, 'a { color-ie: #fff; }',
            'a { color: #fff; }');
 });
