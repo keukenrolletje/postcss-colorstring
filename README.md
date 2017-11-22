@@ -13,7 +13,7 @@ http://scrappy-do.blogspot.be/2004/08/little-rant-about-microsoft-internet.html
 ## Installation
 
 ```bash
-$ npm install postcss-color-hcl
+$ npm install postcss-colorstring
 ```
 
 ##Usage
